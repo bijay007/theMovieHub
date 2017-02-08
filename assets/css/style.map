@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"//-------------------CARRUSEL---------------------\n.carousel {\n  height: 500px;\n  margin-bottom: 60px; }\n.carousel-caption {\n  z-index: 10; }\n.carousel .item {\n  height: 500px;\n  background-color: #777; }\n.carousel-inner > .item > img {\n  position: absolute;\n  top: 0;\n  left: 0;\n  min-width: 100%;\n  height: 500px; }\n.carousel-caption p {\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: 1.4; }\n// ------------------------NAV -------------------------\n.navbar {\n background-color: #2F2F2F;\n height: 70px;\n margin: 0px;\n opacity:0.8 !important {} }\n//--------TITLE NAV-----------\nh3 {\n margin-top: -1px;\n font-family: open sans; }\nspan {\n color:#FFFF91 {}\n\n } //--------BODY----------------\nbody {\n background-color: #BDC4A7;\n } //-------FOOTER--------------\n.food {\n width: 100%;\n padding: 30px;\n background-color: #93827F;\n color: white;\n height: 250px;\n margin-top: 140px;\n opacity: 0.8; }\n"
+	],
+	"mappings": ";AACA,AAAA,SAAS,CAAC;EACR,MAAM,EAAE,KAAM;EACd,aAAa,EAAE,IAAK;CAAG;;;AACzB,AAAA,iBAAiB,CAAC;EAChB,OAAO,EAAE,EAAG;CAAG;;;AACjB,AAAU,SAAD,CAAC,KAAK,CAAC;EACd,MAAM,EAAE,KAAM;EACd,gBAAgB,EAAE,IAAK;CAAG;;;AAC5B,AAA0B,eAAX,GAAG,KAAK,GAAG,GAAG,CAAC;EAC5B,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;EACR,SAAS,EAAE,IAAK;EAChB,MAAM,EAAE,KAAM;CAAG;;;AACnB,AAAkB,iBAAD,CAAC,CAAC,CAAC;EAClB,aAAa,EAAE,IAAK;EACpB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,GAAI;CAAG;;;AAEtB,AAAA,OAAO,CAAC;EACP,gBAAgB,EAAE,OAAQ;EAC1B,MAAM,EAAE,IAAK;EACb,MAAM,EAAE,GAAI;EACZ,OAAO,EAAC,GAAG,CAAC,UAAU;CAAK;;;AAE5B,AAAA,EAAE,CAAC;EACF,UAAU,EAAE,IAAK;EACjB,WAAW,EAAE,SAAU;CAAG;;;AAC3B,AAAA,IAAI,CAAC;EACJ,KAAK,EAAC,OAAO;CAEZ;;;AACF,AAAA,IAAI,CAAC;EACJ,gBAAgB,EAAE,OAAQ;CACzB;;;AACF,AAAA,KAAK,CAAC;EACL,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,IAAK;EACd,gBAAgB,EAAE,OAAQ;EAC1B,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;EACd,UAAU,EAAE,KAAM;EAClB,OAAO,EAAE,GAAI;CAAG",
+	"names": []
+}

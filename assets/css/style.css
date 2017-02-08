@@ -1,0 +1,69 @@
+/* line 2, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+/* line 5, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* line 7, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+/* line 10, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* line 16, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.carousel-caption p {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+/* line 21, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.navbar {
+  background-color: #2F2F2F;
+  height: 70px;
+  margin: 0px;
+  opacity: 0.8 !important;
+}
+
+/* line 27, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+h3 {
+  margin-top: -1px;
+  font-family: open sans;
+}
+
+/* line 30, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+span {
+  color: #FFFF91;
+}
+
+/* line 34, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+body {
+  background-color: #BDC4A7;
+}
+
+/* line 37, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
+.food {
+  width: 100%;
+  padding: 30px;
+  background-color: #93827F;
+  color: white;
+  height: 250px;
+  margin-top: 140px;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=../css/style.map */
