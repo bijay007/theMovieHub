@@ -11,5 +11,31 @@ angular.module('app')
         controller: 'CategoryController',
         controllerAs: 'vm'
       })
+      .when('/category/:name/popular', {
+        templateUrl: '/app/category/popular/popular.template.html',
+        controller: 'PopularController',
+        controllerAs: 'vm'
+      })
+      .when('/category/:name/upcoming', {
+        templateUrl: '/app/category/upcoming/upcoming.template.html',
+        controller: 'UpcomingController',
+        controllerAs: 'vm'
+      })
+      .when('/category/:name/latest', {
+        templateUrl: '/app/category/latest/latest.template.html',
+        controller: 'LatestController',
+        controllerAs: 'vm'
+      })
+      .when('/category/:name/toprated', {
+        templateUrl: '/app/category/toprated/toprated.template.html',
+        controller: 'TopRatedController',
+        controllerAs: 'vm'
+      })
+      .when('/category/:name/nowplaying', {
+        templateUrl: '/app/category/nowplaying/nowplaying.template.html',
+        controller: 'NowPlayingController',
+        controllerAs: 'vm'
+      })
+
       .otherwise('/home')
   })

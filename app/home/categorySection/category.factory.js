@@ -1,3 +1,5 @@
+/* eslint no-undef: 'off' */
+
 (function () {
   angular
     .module('app')
@@ -30,11 +32,15 @@
     }
 
     function getPopular () {
-
+      var url = 'https://api.themoviedb.org/3/movie/popular?api_key=<%KEY%>'
+      var url = url.replace('<%KEY%>', apiKey)
+      return $http.get(url)
     }
 
     function getUpcoming () {
-
+      var url = 'https://api.themoviedb.org/3/movie/upcoming?api_key=<%KEY%>'
+      var url = url.replace('<%KEY%>', apiKey)
+      return $http.get(url)
     }
 
     function getLatest () {
@@ -42,11 +48,15 @@
     }
 
     function getTopRated () {
-
+      var url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=<%KEY%>'
+      var url = url.replace('<%KEY%>', apiKey)
+      return $http.get(url)
     }
 
     function getNowPlaying () {
-
+      var url = 'https://api.themoviedb.org/3/movie/now_playing?api_key=<%KEY%>'
+      var url = url.replace('<%KEY%>', apiKey)
+      return $http.get(url)
     }
 
     function getIdByCategoryName (categoryName) {

@@ -1,17 +1,18 @@
+/*eslint no-undef: 'off' */
+
 (function () {
   angular.module('app')
-    .controller('CategoryController', CategoryController)
+    .controller('LatestController', LatestController)
 
-  function CategoryController ($routeParams, movieHubFactory) {
+  function LatestController ($routeParams, movieHubFactory) {
     vm = this
     vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(this.categoryName)
-    movieHubFactory.getMoviesByCategory(this.categoryID)
+    vm.filterName = 'Popular'
+    movieHubFactory.getPopular()
     .then(function (data) {
-      vm.movies = data
+      vm.movies = data.results
       console.log(vm.movies)
-    })
   }
-})()
-
+})
