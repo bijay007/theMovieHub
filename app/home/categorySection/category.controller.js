@@ -9,38 +9,38 @@
 
     vm.categoriesOne = [
       {
-        name: 'adventure',
+        name: 'Adventure',
         id: 12
       },
       {
-        name: 'action',
+        name: 'Action',
         id: 28
       },
       {
-        name: 'family',
+        name: 'Family',
         id: 10751
       },
       {
-        name: 'horror',
+        name: 'Horror',
         id: 27
       }
     ]
 
     vm.categoriesTwo = [
       {
-        name: 'animation',
+        name: 'Animation',
         id: 16
       },
       {
-        name: 'comedy',
+        name: 'Comedy',
         id: 35
       },
       {
-        name: 'documentary',
-        id: 99
+        name: 'Thriller',
+        id: 53
       },
       {
-        name: 'romance',
+        name: 'Romance',
         id: 10749
       }]
 
