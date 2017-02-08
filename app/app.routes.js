@@ -3,7 +3,7 @@ angular.module('app')
     $routeProvider
       .when('/home', {
         templateUrl: '/app/home/home.template.html',
-        controller: 'CategoryController',
+        controller: 'CategoryHomeController',
         controllerAs: 'vm'
       })
       .when('/category/:name', {

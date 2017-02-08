@@ -3,9 +3,13 @@
     .controller('CategoryController', CategoryController)
 
   function CategoryController ($routeParams, movieHubFactory) {
-    this.categoryName = $routeParams.name
-    this.categoryID = parseInt(this.categoryName)
-    this.movies = movieHubFactory.getMovieList(this.categoryID)
-    console.log(this.movies.$$state)
+  	vm = this
+    vm.categoryName = $routeParams.name
+    vm.categoryID = parseInt(this.categoryName)
+    movieHubFactory.getMoviesByCategory(this.categoryID)
+    .then(function (data) {
+      vm.movies = data
+          	console.log(vm.movies)
+    })
   }
 })()

@@ -7,25 +7,22 @@
     var apiKey = '0ea733e6e9ff0120779fcfb8e7b9439d'
 
     var objectReturn = {
-      getCategoryList: getCategoryList,
-      getMovieList: getMovieList,
+      getMoviesByCategory: getMoviesByCategory,
       getMovie: getMovie,
       getPopular: getPopular,
-      getNewest: getNewest,
-      getTopRanked: getTopRanked,
+      getLatest: getLatest,
+      getTopRated: getTopRated,
+      getNowPlaying: getNowPlaying,
+      getUpcoming: getUpcoming,
       getIdByCategoryName: getIdByCategoryName
     }
 
-    function getCategoryList () {
-      var url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=' + apiKey + '&language=en-US)'
-      var categories = $http.get(url)
-      console.log(categories)
-      return categories
-    }
-
-    function getMovieList (categoryID) {
-      var movies = $http.get('https://api.themoviedb.org/3/genre/' + categoryID + '/movies?api_key=' + apiKey + '&language=en-US&include_adult=false&sort_by=created_at.asc')
-      return movies
+    function getMoviesByCategory (categoryID) {
+      var url = 'https://api.themoviedb.org/3/genre/' + categoryID + '/movies?api_key=' + apiKey + '&language=en-US'
+      return $http.get(url)
+                .then(function (response) {
+                  return response.data.results
+                })
     }
 
     function getMovie (categoryID) {
@@ -36,11 +33,19 @@
 
     }
 
-    function getNewest () {
+    function getUpcoming () {
 
     }
 
-    function getTopRanked () {
+    function getLatest () {
+
+    }
+
+    function getTopRated () {
+
+    }
+
+    function getNowPlaying () {
 
     }
 
