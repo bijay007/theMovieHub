@@ -1,6 +1,6 @@
 /* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_nav.sass */
 .navbar {
-  background-color: #fff;
+  background-color: #2F2F2F;
   border-radius: 0px;
   height: 80px;
   border: none;
@@ -10,13 +10,13 @@
 .navbar h3 {
   margin-top: 7px;
   font-family: open sans;
-  color: #464646;
+  color: #ffffff;
   font-weight: 600;
 }
 
 /* line 13, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_nav.sass */
 .navbar span {
-  color: #79c142;
+  color: #FFFF91;
 }
 
 /* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
@@ -317,7 +317,7 @@ footer p {
 
 /* line 7, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/style.sass */
 body {
-  background-color: #e5e5e5;
+  background-color: #BDC4A7;
 }
 
 /*# sourceMappingURL=../css/style.map */
