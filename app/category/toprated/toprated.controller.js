@@ -8,10 +8,11 @@
     var vm = this
     vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
-    vm.categoryID = parseInt(this.categoryName)
+    vm.categoryID = parseInt(vm.categoryName)
     vm.filterName = 'Top Rated'
     vm.query = ''
-    movieHubFactory.getTopRated()
+
+    movieHubFactory.getTopRatedGenre(vm.categoryID)
     .then(function (data) {
       vm.movies = data
     })

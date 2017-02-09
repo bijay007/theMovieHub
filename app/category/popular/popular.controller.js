@@ -1,3 +1,4 @@
+
 /* eslint no-undef: 'off' */
 
 (function () {
@@ -8,12 +9,13 @@
     var vm = this
     vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
-    vm.categoryID = parseInt(this.categoryName)
+    vm.categoryID = parseInt(vm.categoryName)
     vm.filterName = 'Popular'
     vm.query = ''
-    movieHubFactory.getPopular()
-    .then(function (data) {
-      vm.movies = data
+
+    movieHubFactory.getPopularGenre(vm.categoryID)
+    .then(function (response) {
+      vm.movies = response
     })
   }
 })()

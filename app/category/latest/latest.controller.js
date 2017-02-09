@@ -8,12 +8,13 @@
     var vm = this
     vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
-    vm.categoryID = parseInt(this.categoryName)
+    vm.categoryID = parseInt(vm.categoryName)
     vm.filterName = 'Latest'
     vm.query = ''
-    movieHubFactory.getLatest()
-    .then(function (data) {
-      vm.movies = data
+
+    movieHubFactory.getLatestGenre(vm.categoryID)
+    .then(function (response) {
+      vm.movies = response
     })
   }
 })()
