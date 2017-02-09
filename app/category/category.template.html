@@ -58,10 +58,10 @@
 			<li ng-repeat="movie in vm.movies | filter: {title :  query}">
 			    <div class="hovereffect">
 			        <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
-			        <div class="overlay">
+			        <div class="overlay" id="myModal{{$index}}" >
 			            <h4>{{movie.title}}</h4>
 						<p> 
-							<a ng-href="">VIEW MOVIE</a>
+							<a ng-href="#!/info_movie/{{movie.id}}">VIEW MOVIE</a>
 						</p> 
 			        </div>
 			    </div>

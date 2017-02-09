@@ -36,6 +36,11 @@ angular.module('app')
         controller: 'NowPlayingController',
         controllerAs: 'vm'
       })
+       .when('/info_movie/:name', {
+         templateUrl: '/app/info_movie/info.movie.template.html',
+         controller: 'InfoMovieController',
+         controllerAs: 'vm'
+       })
 
       .otherwise('/home')
   })

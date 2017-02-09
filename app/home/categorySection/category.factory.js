@@ -16,7 +16,8 @@
       getTopRated: getTopRated,
       getNowPlaying: getNowPlaying,
       getUpcoming: getUpcoming,
-      getIdByCategoryName: getIdByCategoryName
+      getIdByCategoryName: getIdByCategoryName,
+      getInfoMovie: getInfoMovie
     }
 
     function getMoviesByCategory (categoryID) {
@@ -61,6 +62,13 @@
 
     function getNowPlaying () {
       return $http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=' + apiKey + '')
+      .then(function (response) {
+        return response.data.results
+      })
+    }
+
+    function getInfoMovie (filmID) {
+      return $http.get('https://api.themoviedb.org/3/movie/' + filmID + '/?api_key=' + apiKey + '&language=en-US')
       .then(function (response) {
         return response.data.results
       })

@@ -138,3 +138,14 @@ Añade la clase .initialism (iniciales en inglés) a un elemento <abbr> para red
 
 **ESTRELLAS**
 .glyphicon .glyphicon-star
+
+
+npm bower install -g --> ambito global
+
+bower init
+
+bower install
+
+bower install boootstrap--save
+
+touch.gitignore --> no subir archivos que no interesen
