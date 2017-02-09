@@ -7,44 +7,54 @@
 		<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/hover-img.css">
-		<link rel="stylesheet" href="assets/css/slider.css">
 
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="bower_components/angular/angular.min.js"></script>
 		<script src="bower_components/angular-route/angular-route.min.js"></script>
-		
+    <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
 
 	</head>
 	<body>
-		<header>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               <a class="navbar-brand" href="bootstrap_01.html"> <h3><span>the</span> Movie HUB</h3></a>
-               <!--  <a class="navbar-brand" href="bootstrap_01.html"><img src="asssets/img/logos/logo_movieHUB.jpg" width="20%" alt=""></a> -->
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-               
-            </div>
-            <!--/.nav-collapse -->
+
+    <div class="container-fluid">
+        <div class="row">
+			<header>
+	            <nav class="navbar navbar-inverse">
+	                <div class="navbar-header">
+	                <div class="container">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="bootstrap_01.html"> <h3><span>the</span> Movie HUB</h3></a>
+	                    <!--  <a class="navbar-brand" href="bootstrap_01.html"><img src="asssets/img/logos/logo_movieHUB.jpg" width="20%" alt=""></a> -->
+	                </div>
+	                </div>
+	                <div id="navbar" class="navbar-collapse collapse"></div>
+	            </nav>
+			</header>
         </div>
-    </nav>
+	</div>
 
+	<div class="container-fluid">
+		<div class="row">
+			<main>
+				</div><div ng-view>
+			</main>
+		</div>	
+	</div>
 
+	<div class="container-fluid">
+		<div class="row">
+			<footer>
+			 	<p class="copy col-md-6">Copyright ® 2017, All Rights Reserved</p>
+			</footer>
+		</div>
+	</div>
 
-		<div ng-view></div>
-
-<footer class="food container-fluid">
- 	<p class="copy col-md-6">Copyright ® 2015, All Rights Reserved</p>
-</footer>
 
 
 		<script src="app/app.module.js"></script>

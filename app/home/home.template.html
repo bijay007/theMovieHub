@@ -8,10 +8,14 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+
+
       <!-- first page carousel-->
         <div class="item active">
-          <img ng-src="{{ vm.imgNowPlaying }}" class="figure-img img-fluid first-slide" alt="first">
-<!--           <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
+          <div class="col-md-4 col-md-offset-2">
+          <img ng-src="{{ vm.imgNowPlaying }}" class="figure-img img-fluid first-slide" alt="first" style="width: 333px">
+          </div>
+          <div class="col-md-4" style="height: 495px">
           <div class="container">
             <div class="carousel-caption">
               <h1>Now Playing</h1>
@@ -22,12 +26,19 @@
               <p><a class="btn btn-lg btn-primary" href="#" role="button">More Recent</a></p>
             </div>
           </div>
+          </div>
         </div>
+
+
         <!-- second page carousel-->
         <div class="item">
-            <img ng-src="{{ vm.imgGetPopular }}" class="figure-img img-fluid second-slide" alt="second">
+        <div class="row">
+                  <div class="col-md-4 col-md-offset-2">
 
-<!--           <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide"> -->
+            <img ng-src="{{ vm.imgGetPopular }}" class="figure-img img-fluid second-slide" alt="second" style="width: 333px">
+</div>
+          <div class="col-md-4" style="height: 495px">
+
           <div class="container">
             <div class="carousel-caption">
               <h1>Most Popular</h1>
@@ -38,11 +49,19 @@
               <p><a class="btn btn-lg btn-primary" href="#" role="button">More Popular</a></p>
             </div>
           </div>
+          </div>
         </div>
+        </div>
+
+
         <!-- third page carousel-->
         <div class="item">
-          <img ng-src="{{ vm.imgTopRated }}" class="figure-img img-fluid" alt="third">
-<!--           <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide"> -->
+                  <div class="col-md-4 col-md-offset-2">
+
+          <img ng-src="{{ vm.imgTopRated }}" class="figure-img img-fluid" alt="third" style="width: 333px">
+          </div>
+                    <div class="col-md-4" style="height: 495px">
+
           <div class="container">
             <div class="carousel-caption">
               <h1>Top Rated</h1>
@@ -52,6 +71,7 @@
               <p>{{ vm.descTopRated }}</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">More TopRated</a></p>
             </div>
+          </div>
           </div>
         </div>
       </div> <!-- end of carousel item pages-->
@@ -69,16 +89,41 @@
 </section>
 
 <section class="homeCategories">
-	<div class="container" ng-controller="CategoryHomeController as catHomCtrl">
-		<div class="row">
-			<div class="col-md-3" ng-repeat="category in catHomCtrl.categoriesOne">
-				<a ng-href="#!/category/{{category.id + category.name}}" ><img src="" alt="">{{category.name}}</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3" ng-repeat="category in catHomCtrl.categoriesTwo">
-				<a ng-href="#!/category/{{category.id + category.name}}" ><img src="" alt="">{{category.name}}</a>
-			</div>
-		</div>
-	</div>
+
+  <div class="container" ng-controller="CategoryHomeController as catHomCtrl">
+
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="category in catHomCtrl.categoriesOne">
+        <div class="hovereffectHome">
+          <img class="img-responsive" src="{{category.poster}}" alt="">
+          <div class="overlayHome">
+            <h2>{{category.name}}</h2>
+            <p>
+              <a ng-href="#!/category/{{category.id + category.name}}">View more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="category in catHomCtrl.categoriesTwo">
+        <div class="hovereffectHome">
+          <img class="img-responsive" src="{{category.poster}}" alt="">
+          <div class="overlayHome">
+            <h2>{{category.name}}</h2>
+            <p>
+              <a ng-href="#!/category/{{category.id + category.name}}">View more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
