@@ -1,6 +1,5 @@
 
-
-function () {
+(function () {
   angular.module('app')
     .controller('InfoMovieController', InfoMovieController)
 
@@ -11,10 +10,10 @@ function () {
     vm.movieID = parseInt(vm.movieName)
     console.log(vm.movieID)
     vm.query = ''
-    movieHubFactory.getMovies(vm.movieID)
+    movieHubFactory.getInfoMovie(vm.movieID)
     .then(function (data) {
+      console.log(data)
       vm.movies = data
-      
     })
   }
 })()
