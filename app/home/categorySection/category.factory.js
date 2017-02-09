@@ -22,9 +22,9 @@
     function getMoviesByCategory (categoryID) {
       var url = 'https://api.themoviedb.org/3/genre/' + categoryID + '/movies?api_key=' + apiKey + '&language=en-US'
       return $http.get(url)
-                .then(function (response) {
-                  return response.data.results
-                })
+        .then(function (response) {
+          return response.data.results
+        })
     }
 
     function getMovie (categoryID) {
@@ -32,44 +32,51 @@
     }
 
     function getPopular () {
-      var url = 'https://api.themoviedb.org/3/movie/popular?api_key=<%KEY%>'
-      var url = url.replace('<%KEY%>', apiKey)
-      return $http.get(url)
+      return $http.get('https://api.themoviedb.org/3/movie/popular?api_key=' + apiKey + '')
+      .then(function (response) {
+        return response.data.results
+      })
     }
 
     function getUpcoming () {
-      var url = 'https://api.themoviedb.org/3/movie/upcoming?api_key=<%KEY%>'
-      var url = url.replace('<%KEY%>', apiKey)
-      return $http.get(url)
+      return $http.get('https://api.themoviedb.org/3/movie/upcoming?api_key=' + apiKey + '&language=en-US&page=1')
+        .then(function (response) {
+          return response.data.results
+        })
     }
 
     function getLatest () {
-
+      return $http.get('https://api.themoviedb.org/3/movie/latest?api_key=' + apiKey + '&language=en-US')
+      .then(function (response) {
+        return response.data.results
+      })
     }
 
     function getTopRated () {
-      var url = 'https://api.themoviedb.org/3/movie/top_rated?api_key=<%KEY%>'
-      var url = url.replace('<%KEY%>', apiKey)
-      return $http.get(url)
+      return $http.get('https://api.themoviedb.org/3/movie/top_rated?api_key=' + apiKey + '&language=en-US&page=1')
+      .then(function (response) {
+        return response.data.results
+      })
     }
 
     function getNowPlaying () {
-      var url = 'https://api.themoviedb.org/3/movie/now_playing?api_key=<%KEY%>'
-      var url = url.replace('<%KEY%>', apiKey)
-      return $http.get(url)
+      return $http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=' + apiKey + '')
+      .then(function (response) {
+        return response.data.results
+      })
     }
 
     function getIdByCategoryName (categoryName) {
       var categories = []
       var categoryID
 
-      // categories = getCategoryList()
+    //   // categories = getCategoryList()
 
-      // categories.forEach(function (elem, index) {
-      //   if (elem.name === categoryName) {
-      //     categoryID = elem.id
-      //   }
-      // })
+    //   // categories.forEach(function (elem, index) {
+    //   //   if (elem.name === categoryName) {
+    //   //     categoryID = elem.id
+    //   //   }
+    //   // })
 
       return categoryID
     }

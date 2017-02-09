@@ -8,37 +8,53 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+      <!-- first page carousel-->
         <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img ng-src="{{ vm.imgNowPlaying }}" class="figure-img img-fluid first-slide" alt="first">
+<!--           <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Now Playing</h1>
+              <a ng-href="">
+                <p>{{ vm.titleNowPlaying }}</p>
+              </a>
+              <p>{{ vm.descNowPlaying }}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">More Recent</a></p>
             </div>
           </div>
         </div>
+        <!-- second page carousel-->
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img ng-src="{{ vm.imgGetPopular }}" class="figure-img img-fluid second-slide" alt="second">
+
+<!--           <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide"> -->
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>Most Popular</h1>
+              <a ng-href="">
+                <p>{{ vm.titleGetPopular }}</p>
+              </a>
+              <p>{{ vm.descGetPopular }}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">More Popular</a></p>
             </div>
           </div>
         </div>
+        <!-- third page carousel-->
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img ng-src="{{ vm.imgTopRated }}" class="figure-img img-fluid" alt="third">
+<!--           <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide"> -->
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Top Rated</h1>
+              <a ng-href="">
+                <p>{{ vm.titleTopRated }}</p>
+              </a>
+              <p>{{ vm.descTopRated }}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">More TopRated</a></p>
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- end of carousel item pages-->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
