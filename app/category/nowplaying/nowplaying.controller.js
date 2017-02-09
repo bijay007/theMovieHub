@@ -8,6 +8,7 @@
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(this.categoryName)
     vm.filterName = 'Now Playing'
+    vm.query = ''
     movieHubFactory.getNowPlaying()
     .then(function (data) {
       vm.movies = data

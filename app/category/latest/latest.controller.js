@@ -10,6 +10,7 @@
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(this.categoryName)
     vm.filterName = 'Latest'
+    vm.query = ''
     movieHubFactory.getLatest()
     .then(function (data) {
       vm.movies = data

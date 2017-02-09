@@ -7,6 +7,7 @@
     vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(this.categoryName)
+    vm.query = ''
     movieHubFactory.getMoviesByCategory(this.categoryID)
     .then(function (data) {
       vm.movies = data
