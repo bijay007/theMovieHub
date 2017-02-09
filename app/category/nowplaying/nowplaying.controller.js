@@ -3,7 +3,15 @@
     .controller('NowPlayingController', NowPlayingController)
 
   function NowPlayingController ($routeParams, movieHubFactory) {
-    vm = this
+    var vm = this
+    vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
+    vm.categoryName = $routeParams.name
+    vm.categoryID = parseInt(this.categoryName)
+    vm.filterName = 'Now Playing'
+    movieHubFactory.getNowPlaying()
+    .then(function (data) {
+      vm.movies = data
+    })
   }
-})
+})()
 
