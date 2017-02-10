@@ -121,9 +121,9 @@
     }
 
     function getInfoMovie (filmID) {
-      return $http.get('https://api.themoviedb.org/3/movie/' + filmID + '/?api_key=' + apiKey + '&language=en-US')
+      return $http.get('https://api.themoviedb.org/3/movie/' + filmID + '?api_key=' + apiKey + '&language=en-US')
       .then(function (response) {
-        return response.data.results
+        return response.data
       })
     }
 
