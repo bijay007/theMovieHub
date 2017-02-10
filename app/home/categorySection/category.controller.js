@@ -21,7 +21,7 @@
       {
         name: 'Family',
         id: 10751,
-        poster: 'https://assets.nydailynews.com/polopoly_fs/1.5810.1313648894!/img/httpsImage/sopranos.jpg'
+        poster: 'https://assets.nydailynews.com/polopoly_fs/1.5810.1313648894!/img/httpImage/sopranos.jpg'
       },
       {
         name: 'Horror',
