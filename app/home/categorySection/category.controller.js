@@ -26,7 +26,7 @@
       {
         name: 'Horror',
         id: 27,
-        poster: 'httpss://s-media-cache-ak0.pinimg.com/736x/30/83/08/3083088424d1ab30945e004a557455b5.jpg'
+        poster: 'https://s-media-cache-ak0.pinimg.com/736x/30/83/08/3083088424d1ab30945e004a557455b5.jpg'
       }
     ]
 
@@ -44,7 +44,7 @@
       {
         name: 'Thriller',
         id: 53,
-        poster: 'httpss://www.moviesky.in/wp-content/uploads/2016/09/Dont-Breathe-2016-English-Movie-350x250.jpg'
+        poster: 'https://www.moviesky.in/wp-content/uploads/2016/09/Dont-Breathe-2016-English-Movie-350x250.jpg'
       },
       {
         name: 'Romance',
