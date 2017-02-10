@@ -1,7 +1,4 @@
-* Try Movies
-* Catch Movies
-* TC Movies
-* Movie Hub
-* BEC
+# theMovieHub
 
-To, in progress, done, rejected
+This repo contains a project that shows a list of movies according to different categories and genres 
+
