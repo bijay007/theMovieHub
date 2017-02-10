@@ -8,13 +8,26 @@
 </div>
 
 <!-- SEARCH NAV -->
+
 <div class="row">
-	<div class="navbar">
-		<div class="container">
-			<div class="col-md-3">
-				<input type="text" class="form-control" ng-model="query" id="" placeholder="Search a movie">
+	<div class="col-md-3">
+		<form action="" method="POST" class="form-inline" role="form">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="form-group">
+						<label class="sr-only" for="">label</label>
+						<input type="text" class="form-control" ng-model="query" id="" placeholder="Search a movie">
+					</div>
+				</div>
+				<div class="col-md-3">			
+					<button type="submit" class="btn btn-primary">Search</button>
+				</div>
 			</div>
-			<div class="col-md-9">
+		</form>
+	</div>
+	<div class="col-md-9">
+		<div class="navbar">
+			<div class="container-fluid">
 				<ul class="nav navbar-nav">
 					<li class="active">
 						<a href="#!/category/{{vm.categoryName}}/popular">Popular</a>
@@ -30,12 +43,13 @@
 					</li>
 					<li>
 						<a href="#!/category/{{vm.categoryName}}/nowplaying">Now Playing</a>
-					</li>
+					</li>				
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+
 <!-- MOVIE RESULTS -->
 
 <div class="container">
