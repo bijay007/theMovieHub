@@ -1,3 +1,6 @@
+
+
+
 <section class="homeSlider">
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -85,8 +88,61 @@
       </a>
     </div><!-- /.carousel -->
 
-
 </section>
+
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(function(){
+    $('#slider div:gt(0)').hide();
+    setInterval(function(){
+      $('#slider div:first-child').fadeOut(0)
+         .next('div').fadeIn(2000)
+         .end().appendTo('#slider');}, 16000);
+
+
+  var home = ['“Hay tres maneras de hacer las cosas: la correcta, la incorrecta y la mía Robert de Niro en Casino, de Martin Scorsese”', '“Mi mamá siempre me decía que la vida era como una caja de bombones. Nunca sabes lo que te va a tocar Tom Hanks en Forrest Gump”', '“No. No lo intentes. Hazlo, o no lo hagas, pero no lo intentes. El maestro Yoda en La Guerra de las Galaxias”', '“¡Soy el rey del mundo!La historia de Leonardo Dicaprio (Jack) y Kate Winslet (Rose) en Titanic”', '“No existen preguntas sin respuesta, solo preguntas mal formuladas en todo caso, la respuesta siempre está en Matrix”', '“Vienes a mi casa, el día de la boda de mi hija a pedirme que mate por dinero el speech de Marlon Brando en El Padrino”']
+
+
+  $('.sentence1').text(home[0])
+  $('.sentence2').text(home[1])
+  $('.sentence3').text(home[2])
+  $('.sentence4').text(home[3])
+  $('.sentence5').text(home[4])
+  $('.sentence6').text(home[5])
+});
+
+</script>
+
+
+
+
+<div id="slider">
+    <div>
+     <h2 class="sentence1 container text-center"></h2>
+    </div>
+
+    <div>
+     <h2 class="sentence2 container text-center"></h2>
+    </div>
+
+    <div>
+       <h2 class="sentence3 container text-center"> </h2>  
+    </div>
+
+    <div>
+        <h2 class="sentence4 container text-center"></h2>
+    </div>
+
+    <div>
+        <h2 class="sentence5 container text-center"></h2>
+    </div>
+</div>
+
+
+
 
 <section class="homeCategories">
 

@@ -1,4 +1,4 @@
-/* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_nav.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_nav.sass */
 .navbar {
   background-color: #2F2F2F;
   border-radius: 0px;
@@ -6,7 +6,7 @@
   border: none;
 }
 
-/* line 7, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_nav.sass */
+/* line 7, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_nav.sass */
 .navbar h3 {
   margin-top: 7px;
   font-family: open sans;
@@ -14,30 +14,30 @@
   font-weight: 600;
 }
 
-/* line 13, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_nav.sass */
+/* line 13, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_nav.sass */
 .navbar span {
   color: #FFFF91;
 }
 
-/* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_carousel.sass */
 .carousel {
   height: 500px;
   margin-bottom: 60px;
   background-image: url("./assets/img/banner.GIF");
 }
 
-/* line 5, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
+/* line 5, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_carousel.sass */
 .carousel-caption {
   z-index: 10;
 }
 
-/* line 7, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
+/* line 7, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_carousel.sass */
 .carousel .item {
   height: 500px;
   background-color: #777;
 }
 
-/* line 10, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
+/* line 10, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_carousel.sass */
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -46,14 +46,14 @@
   height: 500px;
 }
 
-/* line 16, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_carousel.sass */
+/* line 16, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_carousel.sass */
 .carousel-caption p {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: 1.4;
 }
 
-/* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 .homeCatBox {
   height: 200px;
   width: 280px;
@@ -63,54 +63,54 @@
   margin-bottom: 50px;
 }
 
-/* line 8, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 8, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 .homeCatBox h4 {
   position: relative;
   margin: 0px auto;
   top: 43%;
 }
 
-/* line 12, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 12, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(1) > div:nth-child(1) > a > div {
   background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--CwbU9P32--/c_scale,fl_progressive,q_80,w_800/mrpmjtrph4yimi7zmqfw.jpg");
 }
 
-/* line 14, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 14, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(1) > div:nth-child(2) > a > div {
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/1b/fc/0f/1bfc0f485cabf550376fa0623b46a3ca.jpg");
 }
 
-/* line 16, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 16, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(1) > div:nth-child(3) > a > div {
   background-image: url("http://kissfm.emisorasunidas.com/sites/default/files/imagecache/interior/images/e-t.jpg");
 }
 
-/* line 18, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 18, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(1) > div:nth-child(4) > a > div {
   background-image: url("http://coo.tuvotacion.com:81/imagenes_unicas/cine-de-terror-que-pelicula-te-impacto-14450.jpg");
 }
 
-/* line 20, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 20, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(2) > div:nth-child(1) > a > div {
   background-image: url("https://s-media-cache-ak0.pinimg.com/736x/07/bc/3a/07bc3a5552fa9d51f014d507e2d95207.jpg");
 }
 
-/* line 22, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 22, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(2) > div:nth-child(2) > a > div {
   background-image: url("http://bollyspice.com/wp-content/uploads/2012/10/12oct_Amitabh70BirthdayFilms11.jpg");
 }
 
-/* line 24, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 24, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(2) > div:nth-child(3) > a > div {
   background-image: url("http://precriticas.s3.amazonaws.com/archivos_imagenes_peliculas_r_RareExportsaChristmastale.jpg");
 }
 
-/* line 26, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_categoriesHome.sass */
+/* line 26, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_categoriesHome.sass */
 body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div > div:nth-child(2) > div:nth-child(4) > a > div {
   background-image: url("http://www.macdowells.com/wp-content/uploads/2016/02/13-couple-350x280.jpg");
 }
 
-/* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -121,7 +121,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   cursor: pointer;
 }
 
-/* line 11, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 11, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect .overlay {
   position: absolute;
   overflow: hidden;
@@ -136,7 +136,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: scale(0, 1);
 }
 
-/* line 25, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 25, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect:hover .overlay {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -145,7 +145,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: scale(1);
 }
 
-/* line 33, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 33, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect img {
   display: block;
   position: relative;
@@ -153,14 +153,14 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transition: all 0.35s;
 }
 
-/* line 40, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 40, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect:hover img {
   filter: url('data:image/svg+xmlcharset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
 }
 
-/* line 46, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 46, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect h4 {
   text-transform: uppercase;
   text-align: center;
@@ -177,7 +177,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(0, -100%, 0);
 }
 
-/* line 62, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 62, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect a, hovereffect p {
   color: #FFF;
   padding: 1em 0;
@@ -189,7 +189,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(0, 100%, 0);
 }
 
-/* line 73, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 73, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h4 {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -197,7 +197,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(0, 0, 0);
 }
 
-/* line 80, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 80, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome {
   width: 100%;
   height: 100%;
@@ -210,7 +210,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   margin-bottom: 50px;
 }
 
-/* line 92, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 92, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome .overlayHome {
   width: 100%;
   height: 100%;
@@ -221,7 +221,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   padding: 50px 20px;
 }
 
-/* line 102, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 102, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome img {
   display: block;
   position: relative;
@@ -235,7 +235,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   backface-visibility: hidden;
 }
 
-/* line 115, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 115, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
@@ -243,7 +243,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(0, 0, 0);
 }
 
-/* line 122, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 122, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome h2 {
   text-transform: uppercase;
   color: #fff;
@@ -255,7 +255,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   background-color: transparent;
 }
 
-/* line 133, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 133, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome h2:after {
   position: absolute;
   bottom: 0;
@@ -270,13 +270,13 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 147, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 147, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome:hover h2:after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 152, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 152, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome a, .hovereffectHome p {
   color: #FFF;
   opacity: 0;
@@ -287,7 +287,7 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(100%, 0, 0);
 }
 
-/* line 162, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 162, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome:hover a, .hovereffectHome:hover p {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -295,13 +295,13 @@ body > div:nth-child(2) > div.ng-scope > section.homeCategories.ng-scope > div >
   transform: translate3d(0, 0, 0);
 }
 
-/* line 168, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_hoverImg.sass */
+/* line 168, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_hoverImg.sass */
 .hovereffectHome {
   margin-bottom: 50px;
   cursor: pointer;
 }
 
-/* line 1, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_footer.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_footer.sass */
 footer {
   background-color: #2F2F2F;
   border-radius: 0px;
@@ -310,12 +310,25 @@ footer {
   border: 1px solid black;
 }
 
-/* line 8, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/_footer.sass */
+/* line 8, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_footer.sass */
 footer p {
   margin-top: 15px;
 }
 
-/* line 7, C:/Users/ezequ/Documents/SkyLab/projects/theMovieHub/assets/sass/style.sass */
+/* line 1, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/_sliderSentences.sass */
+#slider {
+  margin: 0px auto;
+  font-family: robotica;
+  padding: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  background-color: #2F2F2F;
+  color: white;
+  height: 200px;
+  opacity: 0.8;
+}
+
+/* line 7, C:/Users/carle/Desktop/Projects_Skylab/theMovieHub/assets/sass/style.sass */
 body {
   background-color: #BDC4A7;
 }

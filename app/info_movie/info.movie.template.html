@@ -1,14 +1,15 @@
+
 <div class="container">
-	<div class="row">
-
-	<<p>FUNCION!!!!</p>
-
-			        <h4>{{vm.movieName}}</h4>
-						
-			        </div>
-			    </div>
-			</li>
-		
+    <div style="width: 100%; border: 2px solid "></div>
+    <div class="row">
+        <img class="img-responsive" src='{{vm.moviePrePath + movie.poster_path}}' alt="">
+        <h2>{{ vm.movie.title}}</h2>
+        <h4>{{vm.movie.overview}}</h4>
+        <div class="row" col-md-6>
+            <p>Votos:{{ vm.movie.vote_average}}</p>
+            <div class=col-md-6>
+                <p>Trailer: <a ng-href="{{vm.movie.homepage}}">{{vm.movie.homepage}}</a></p>
+            </div>
+        </div>
+    </div>
 </div>
-
-

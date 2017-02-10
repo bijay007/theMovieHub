@@ -1,4 +1,3 @@
-
 (function () {
   angular.module('app')
     .controller('InfoMovieController', InfoMovieController)
@@ -12,8 +11,9 @@
     vm.query = ''
     movieHubFactory.getInfoMovie(vm.movieID)
     .then(function (data) {
-      console.log(data)
-      vm.movies = data
+      vm.movie = data
+
+      // vm.movies = data.overview
     })
   }
 })()
