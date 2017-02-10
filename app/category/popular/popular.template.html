@@ -3,11 +3,12 @@
 <div class="jumbotron">
 	<div class="container">
 		<h1>{{vm.categoryName}}</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sequi quia possimus iusto ex porro error, aliquid, architecto unde temporibus.</p>
+
 	</div>
 </div>
 
 <!-- SEARCH NAV -->
+<div class="container">
 
 <div class="row">
 	<div class="col-md-3">
@@ -19,7 +20,7 @@
 						<input type="text" class="form-control" id="" ng-model="query" placeholder="Search a movie">
 					</div>
 				</div>
-				<div class="col-md-3">			
+				<div class="col-md-3">
 					<button type="submit" class="btn btn-primary">Search</button>
 				</div>
 			</div>
@@ -43,11 +44,12 @@
 					</li>
 					<li>
 						<a href="#!/category/{{vm.categoryName}}/nowplaying">Now Playing</a>
-					</li>				
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 
 <!-- MOVIE RESULTS -->
@@ -60,9 +62,9 @@
 			        <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
 			        <div class="overlay">
 			            <h4>{{movie.title}}</h4>
-						<p> 
+						<p>
 							<a ng-href="">VIEW MOVIE</a>
-						</p> 
+						</p>
 			        </div>
 			    </div>
 			</li>
