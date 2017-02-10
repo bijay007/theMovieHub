@@ -11,7 +11,7 @@
       {
         name: 'Adventure',
         id: 12,
-        poster: 'https://www.supernovarock.cl/wp-content/uploads/2013/03/gi01.jpg'
+        poster: 'https://openbooksociety.com/wp-content/uploads/HLIC/70720c8145c729c1512fd98bfd99323b.jpg'
       },
       {
         name: 'Action',
@@ -21,7 +21,7 @@
       {
         name: 'Family',
         id: 10751,
-        poster: 'https://assets.nydailynews.com/polopoly_fs/1.5810.1313648894!/img/httpImage/sopranos.jpg'
+        poster: 'https://openbooksociety.com/wp-content/uploads/HLIC/70720c8145c729c1512fd98bfd99323b.jpg'
       },
       {
         name: 'Horror',
@@ -34,12 +34,12 @@
       {
         name: 'Animation',
         id: 16,
-        poster: 'https://www.superprod.net/system/events/images/104/fullscreen/LassieZoe.jpg'
+        poster: 'https://openbooksociety.com/wp-content/uploads/HLIC/70720c8145c729c1512fd98bfd99323b.jpg'
       },
       {
         name: 'Comedy',
         id: 35,
-        poster: 'https://www.glamourhunt.com/images/Heyy_baby.jpg'
+        poster: 'https://openbooksociety.com/wp-content/uploads/HLIC/70720c8145c729c1512fd98bfd99323b.jpg'
       },
       {
         name: 'Thriller',
