@@ -1,5 +1,5 @@
 ### WEB-------------------------------------------------------------
-https://fonts.google.com/specimen/Megrim?selection.family=Megrim
+httpss://fonts.google.com/specimen/Megrim?selection.family=Megrim
 
 --------------------------------------------------------------------
 
@@ -9,7 +9,7 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 STANDARD @IMPORT
 
 ###INSERT HTML------------------------------------------------------------------------
-<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+<link href="httpss://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
 Specify in CSS
 -------------------------------------------------------------------------------------
 

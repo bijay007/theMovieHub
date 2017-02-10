@@ -285,7 +285,7 @@ function SessionsController() {
 
 ```
 /* avoid */
-function OrderController($http, $q, config, userInfo) {
+function OrderController($https, $q, config, userInfo) {
     var vm = this;
     vm.checkCredit = checkCredit;
     vm.isCreditOk;
@@ -298,7 +298,7 @@ function OrderController($http, $q, config, userInfo) {
         // Prepare URL query string or data object with request data
         // Add user-identifying info so service gets the right credit limit for this user.
         // Use JSONP for this browser if it doesn't support CORS
-        return $http.get(settings)
+        return $https.get(settings)
             .then(function(data) {
              // Unpack JSON data in the response object
                // to find maxRemainingAmount

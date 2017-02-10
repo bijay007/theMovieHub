@@ -4,7 +4,7 @@
 
   function InfoMovieController ($routeParams, movieHubFactory) {
     var vm = this
-    vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
+    vm.moviePrePath = 'https://image.tmdb.org/t/p/w150'
     vm.movieName = $routeParams.name
     vm.movieID = parseInt(vm.movieName)
     vm.query = ''

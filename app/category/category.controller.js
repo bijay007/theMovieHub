@@ -4,7 +4,7 @@
 
   function CategoryController ($routeParams, movieHubFactory) {
     var vm = this
-    vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
+    vm.moviePrePath = 'https://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(this.categoryName)
     vm.categoryName = vm.categoryName.match(/[a-zA-Z]/g).join('')

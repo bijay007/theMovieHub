@@ -4,7 +4,7 @@
 
   function NowPlayingController ($routeParams, movieHubFactory) {
     var vm = this
-    vm.moviePrePath = 'http://image.tmdb.org/t/p/w150'
+    vm.moviePrePath = 'https://image.tmdb.org/t/p/w150'
     vm.categoryName = $routeParams.name
     vm.categoryID = parseInt(vm.categoryName)
     vm.filterName = 'Now Playing'

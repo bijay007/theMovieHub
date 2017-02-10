@@ -1,5 +1,5 @@
 
-https://coolors.co/93827f-ffff91-bdc4a7-2f2f2f-92b4a7
+httpss://coolors.co/93827f-ffff91-bdc4a7-2f2f2f-92b4a7
 -------------------------
 
 AMARILLO: #FFFF91
