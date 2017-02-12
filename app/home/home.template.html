@@ -129,7 +129,7 @@ $(function(){
     </div>
 
     <div>
-       <h2 class="sentence3 container text-center"> </h2>  
+       <h2 class="sentence3 container text-center"> </h2>
     </div>
 
     <div>
@@ -149,24 +149,8 @@ $(function(){
   <div class="container" ng-controller="CategoryHomeController as catHomCtrl">
 
     <div class="row">
-      
+
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="category in catHomCtrl.categoriesOne">
-        <div class="hovereffectHome">
-          <img class="img-responsive" src="{{category.poster}}" alt="">
-          <div class="overlayHome">
-            <h2>{{category.name}}</h2>
-            <p>
-              <a ng-href="#!/category/{{category.id + category.name}}">View more</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="category in catHomCtrl.categoriesTwo">
         <div class="hovereffectHome">
           <img class="img-responsive" src="{{category.poster}}" alt="">
           <div class="overlayHome">

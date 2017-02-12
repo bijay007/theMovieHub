@@ -1,73 +1,70 @@
 <!-- JUMBOTRON -->
 
-<div class="jumbotron {{vm.categoryName}}">
-	<div class="container ">
-		<h1>{{vm.categoryName}}</h1>
-	</div>
-</div>
+<img class="img-responsive" ng-src="https://bijay007.github.io/theMovieHub/assets/img/{{ vm.categoryName | lowercase }}.png" alt="">
 
 <!-- SEARCH NAV -->
 
-<div class="container">
+<div class="container filters">
+  <div class="row">
 
-	<div class="row">
-		<div class="col-md-3">
-			<form action="" method="POST" class="form-inline" role="form">
-				<div class="row">
-					<div class="col-md-9">
-						<div class="form-group">
-							<label class="sr-only" for="">label</label>
-							<input type="text" class="form-control" ng-model="query" id="" placeholder="Search a movie">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<button type="submit" class="btn btn-primary">Search</button>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="col-md-9">
-			<div class="navbar">
-				<div class="container-fluid">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#!/category/{{vm.categoryName}}/popular">Popular</a>
-						</li>
-						<li>
-							<a href="#!/category/{{vm.categoryName}}/upcoming">Upcoming</a>
-						</li>
-						<li>
-							<a href="#!/category/{{vm.categoryName}}/latest">Latest</a>
-						</li>
-						<li>
-							<a href="#!/category/{{vm.categoryName}}/toprated">Top Rated</a>
-						</li>
-						<li>
-							<a href="#!/category/{{vm.categoryName}}/nowplaying">Now Playing</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    <input type="text" class="form-control input-lg" ng-model="query" placeholder="Filter movies by typing a name...">
+
+    <ul class="list-inline">
+      <li>
+        <strong>Filter by Category: </strong>
+      </li>
+      <li>
+        <label>
+            <input value="popular" type="radio" name="category">
+            <span>Popular</span>
+        </label>
+      </li>
+      <li>
+        <label>
+            <input value="latest" type="radio" name="category">
+            <span>Latest</span>
+        </label>
+      </li>
+      <li>
+        <label>
+            <input value="upcoming" type="radio" name="category">
+            <span>Upcoming</span>
+        </label>
+      </li>
+      <li>
+        <label>
+            <input value="toprated" type="radio" name="category">
+            <span>Top Rated</span>
+        </label>
+      </li>
+      <li>
+        <label>
+            <input value="nowplaying" type="radio" name="category">
+            <span>Now Playing</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+
 </div>
 
 <!-- MOVIE RESULTS -->
 
 <div class="container">
-	<div class="row">
-		<ul class="list-inline">
-			<li ng-repeat="movie in vm.movies | filter: {title :  query}">
-			    <div class="hovereffect">
-			        <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
-			        <div class="overlay" id="myModal{{$index}}" >
-			            <h4>{{movie.title}}</h4>
-						<p>
-							<a ng-href="#!/info_movie/{{movie.id + movie.title}}">VIEW MOVIE</a>
-						</p>
-			        </div>
-			    </div>
-			</li>
-		</ul>
-	</div>
+  <div class="row">
+    <ul class="list-inline">
+      <li ng-repeat="movie in vm.movies | filter: {title :  query}">
+          <div class="hovereffect">
+              <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
+              <div class="overlay" id="myModal{{$index}}" >
+                  <h4>{{movie.title}}</h4>
+            <p>
+              <a ng-href="#!/info_movie/{{movie.id + movie.title}}">VIEW MOVIE</a>
+            </p>
+              </div>
+          </div>
+      </li>
+    </ul>
+  </div>
 </div>
