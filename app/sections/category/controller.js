@@ -5,14 +5,22 @@
   function CategoryController ($routeParams, MovieHubFactory) {
     var vm = this
     vm.moviePrePath = 'https://image.tmdb.org/t/p/w150'
-    vm.categoryName = $routeParams.name
-    vm.categoryID = parseInt(this.categoryName)
-    vm.categoryName = vm.categoryName.match(/[a-zA-Z]/g).join('')
+    vm.genreName = $routeParams.name
+    vm.genreID = parseInt(this.genreName)
+    vm.genreName = vm.genreName.match(/[a-zA-Z]/g).join('')
     vm.query = ''
-    MovieHubFactory.getMoviesByCategory(this.categoryID)
-    .then(function (data) {
-      vm.movies = data
-    })
+
+    MovieHubFactory.getMoviesByGenre(this.genreID)
+      .then(function (data) {
+        vm.movies = data
+        console.log(vm.movies)
+      })
+
+    vm.sortReleasedDate = function(movie) {
+      console.log(movie)
+    }
+
   }
+
 })()
 

@@ -1,6 +1,6 @@
 <!-- JUMBOTRON -->
 
-<img class="img-responsive" ng-src="https://bijay007.github.io/theMovieHub/assets/img/{{ vm.categoryName | lowercase }}.png" alt="">
+<img class="img-responsive" ng-src="https://bijay007.github.io/theMovieHub/assets/img/{{ vm.genreName | lowercase }}.png" alt="">
 
 <!-- SEARCH NAV -->
 
@@ -11,38 +11,21 @@
 
     <ul class="list-inline by-category">
       <li>
-        <strong>Filter by Category: </strong>
+        <strong>Order by:</strong>
       </li>
       <li>
         <label>
-            <input value="popular" type="radio" name="category">
-            <span>Popular</span>
+            <input value="title" type="radio" ng-model="vm.order">
+            <span>Title</span>
         </label>
       </li>
       <li>
         <label>
-            <input value="latest" type="radio" name="category">
-            <span>Latest</span>
+            <input value="-vote_average" type="radio" ng-model="vm.order">
+            <span>Rating</span>
         </label>
       </li>
-      <li>
-        <label>
-            <input value="upcoming" type="radio" name="category">
-            <span>Upcoming</span>
-        </label>
-      </li>
-      <li>
-        <label>
-            <input value="toprated" type="radio" name="category">
-            <span>Top Rated</span>
-        </label>
-      </li>
-      <li>
-        <label>
-            <input value="nowplaying" type="radio" name="category">
-            <span>Now Playing</span>
-        </label>
-      </li>
+
     </ul>
   </div>
 
@@ -54,16 +37,18 @@
 <div class="container">
   <div class="row">
     <ul class="list-inline">
-      <li ng-repeat="movie in vm.movies | filter: {title :  query}">
-          <div class="hovereffect">
-              <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
-              <div class="overlay" id="myModal{{$index}}" >
+      <li ng-repeat="movie in vm.movies | filter: { title :  query } | orderBy : vm.order">
+          <a ng-href="#!/info_movie/{{movie.id + movie.title}}">
+            <div class="hovereffect">
+                <img class="img-responsive" src="{{vm.moviePrePath + movie.poster_path}}" alt="">
+                <div class="overlay">
                   <h4>{{movie.title}}</h4>
-            <p>
-              <a ng-href="#!/info_movie/{{movie.id + movie.title}}">VIEW MOVIE</a>
-            </p>
-              </div>
-          </div>
+                  <ul class="list-unstyled">
+                    <li><i class="glyphicon glyphicon-heart-empty"></i> {{movie.vote_average}}</li>
+                  </ul>
+                </div>
+            </div>
+          </a>
       </li>
     </ul>
   </div>

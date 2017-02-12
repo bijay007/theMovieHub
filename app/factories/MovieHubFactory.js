@@ -9,7 +9,7 @@
     var apiKey = '0ea733e6e9ff0120779fcfb8e7b9439d'
 
     var objectReturn = {
-      getMoviesByCategory: getMoviesByCategory,
+      getMoviesByGenre: getMoviesByGenre,
       // getMovie: getMovie,
       getPopular: getPopular,
       getTopRated: getTopRated,
@@ -23,8 +23,8 @@
       getIdByCategoryName: getIdByCategoryName
     }
 
-    function getMoviesByCategory (categoryID) {
-      var url = 'https://api.themoviedb.org/3/genre/' + categoryID + '/movies?api_key=' + apiKey + '&language=en-US'
+    function getMoviesByGenre (genreID) {
+      var url = 'https://api.themoviedb.org/3/genre/' + genreID + '/movies?api_key=' + apiKey + '&language=en-US'
       return $http.get(url)
         .then(function (response) {
           return response.data.results
