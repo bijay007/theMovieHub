@@ -4,7 +4,7 @@
       .module('app')
       .controller('CategoryHomeController', CategoryHomeController)
 
-  function CategoryHomeController (movieHubFactory, genresConfig) {
+  function CategoryHomeController (MovieHubFactory, genresConfig) {
     var vm = this
 
     vm.categoriesOne = genresConfig
@@ -19,21 +19,23 @@
 
     // show random movie image from the three categories below
 
-    movieHubFactory.getNowPlaying()
+    MovieHubFactory.getNowPlaying()
       .then(function (response) {
         randomIndex = vm.generateRandom()
         vm.imgNowPlaying = vm.imgUrl + response[randomIndex].poster_path
         vm.titleNowPlaying = response[randomIndex].title
         vm.descNowPlaying = response[randomIndex].overview
       })
-    movieHubFactory.getPopular()
+
+    MovieHubFactory.getPopular()
       .then(function (response) {
         randomIndex = vm.generateRandom()
         vm.imgGetPopular = vm.imgUrl + response[randomIndex].poster_path
         vm.titleGetPopular = response[randomIndex].title
         vm.descGetPopular = response[randomIndex].overview
       })
-    movieHubFactory.getTopRated()
+
+    MovieHubFactory.getTopRated()
       .then(function (response) {
         randomIndex = vm.generateRandom()
         vm.imgTopRated = vm.imgUrl + response[randomIndex].poster_path

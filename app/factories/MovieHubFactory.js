@@ -3,9 +3,9 @@
 (function () {
   angular
     .module('app')
-    .factory('movieHubFactory', movieHubFactory)
+    .factory('MovieHubFactory', MovieHubFactory)
 
-  function movieHubFactory ($http) {
+  function MovieHubFactory ($http) {
     var apiKey = '0ea733e6e9ff0120779fcfb8e7b9439d'
 
     var objectReturn = {
