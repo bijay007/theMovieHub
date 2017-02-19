@@ -2,14 +2,14 @@
 (function () {
   angular
       .module('app')
-      .controller('CategoryHomeController', CategoryHomeController)
+      .controller('HomeController', HomeController)
 
-  function CategoryHomeController (MovieHubFactory, genresConfig) {
+  function HomeController (MovieHubFactory, genresConfig) {
     var vm = this
 
-    vm.categoriesOne = genresConfig
+    vm.allGenresList = genresConfig
 
-    // generate random num from 1 to 19
+    // generate random num from 1 to 19 (ajax request returns array of size 20)
 
     var randomIndex
     vm.imgUrl = 'https://image.tmdb.org/t/p/w500/'
@@ -24,7 +24,7 @@
         randomIndex = vm.generateRandom()
         vm.imgNowPlaying = vm.imgUrl + response[randomIndex].poster_path
         vm.titleNowPlaying = response[randomIndex].title
-        vm.descNowPlaying = response[randomIndex].overview
+        vm.descNowPlaying = response[randomIndex].overview.split(' ').slice(0, 35).join(' ')
       })
 
     MovieHubFactory.getPopular()
@@ -32,7 +32,7 @@
         randomIndex = vm.generateRandom()
         vm.imgGetPopular = vm.imgUrl + response[randomIndex].poster_path
         vm.titleGetPopular = response[randomIndex].title
-        vm.descGetPopular = response[randomIndex].overview
+        vm.descGetPopular = response[randomIndex].overview.split(' ').slice(0, 35).join(' ')
       })
 
     MovieHubFactory.getTopRated()
@@ -40,7 +40,7 @@
         randomIndex = vm.generateRandom()
         vm.imgTopRated = vm.imgUrl + response[randomIndex].poster_path
         vm.titleTopRated = response[randomIndex].title
-        vm.descTopRated = response[randomIndex].overview
+        vm.descTopRated = response[randomIndex].overview.split(' ').slice(0, 35).join(' ')
       })
   }
 })()
