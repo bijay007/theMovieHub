@@ -1,6 +1,6 @@
 angular.module('app')
   .constant('APIKey', '0ea733e6e9ff0120779fcfb8e7b9439d')
-  .constant('pathCoverGenre', 'https://bijay007.github.io/theMovieHub/img/genres/')
+  .constant('pathCoverGenre', 'https://bijay007.github.io/theMovieHub/')
   .constant('genresConfig', [
     {
       name: 'Adventure',
